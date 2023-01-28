@@ -32,9 +32,33 @@
   transform: rotate(-20deg);
 }
 
-.menuList {
+.showList {
   position: absolute;
   list-style: none;
+  padding: 0;
+  width: 100%;
+  height: 50%;
+  margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hideList {
+  display: none;
+}
+
+.showList li {
+  color: #fefefe;
+  font-weight: 700;
+  font-size: 2em;
+  margin: 0.5em 0em 0.5em 0em;
+}
+
+.showList li:hover {
+  cursor: pointer;
+  opacity: 60%;
 }
 
 @keyframes show {
@@ -62,5 +86,14 @@
     position: absolute;
     right: 50px;
     top: 20px;
+  }
+
+  .menuList {
+    margin-top: 12em;
+  }
+
+  .menuList li {
+    font-weight: 900;
+    font-size: 2.5em;
   }
 }

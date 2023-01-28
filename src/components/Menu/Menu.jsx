@@ -13,10 +13,13 @@ function Menu({ menuVisibility, toggleMenu }) {
         <Close onClick={toggleMenu} width="80" height="80" />
       </span>
 
-      <ul className={styles.menuList}>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul
+        className={menuVisibility ? `${styles.showList}` : `${styles.hideList}`}
+      >
+        <li>Projects</li>
+        <li>About Nara</li>
+
+        <li>Contact</li>
       </ul>
     </div>
   );
