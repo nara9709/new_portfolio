@@ -19,6 +19,12 @@
   cursor: pointer;
 }
 
+.click {
+  position: absolute;
+  right: 90px;
+  transform: rotate(-30deg);
+}
+
 @keyframes shake {
   0% {
     transform: rotate(-5deg);

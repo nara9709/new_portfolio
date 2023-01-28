@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './Header.module.css';
 import { ReactComponent as MenuIcon } from '../../svgs/menu.svg';
 import { ReactComponent as Logo } from '../../svgs/logo.svg';
+import { ReactComponent as Click } from '../../svgs/click.svg';
 import Menu from '../Menu/Menu';
 
 function Header() {
@@ -22,6 +23,7 @@ function Header() {
         <Logo width="130" height="130" />
       </span>
       <span>
+        <Click width="60" height="60" className={styles.click} />
         <MenuIcon
           onClick={toggleMenu}
           className={styles.menu}
