@@ -1,0 +1,66 @@
+.menuBoxHide {
+  background-color: #c29d4e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: -100vw;
+  height: 100vh;
+  z-index: 2;
+  transition: width ease-in-out 1s;
+}
+
+.menuBoxShow {
+  background-color: #9e7e39;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  animation-name: show;
+  animation-duration: 1s;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.close:hover {
+  cursor: pointer;
+  transform: rotate(-20deg);
+}
+
+.menuList {
+  position: absolute;
+  list-style: none;
+}
+
+@keyframes show {
+  0% {
+    transform: translate3d(-100vw, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(100vw, 1, 1);
+  }
+}
+
+@keyframes hide {
+  0% {
+    transform: translate3d(100vw, 1, 1);
+  }
+
+  100% {
+    transform: translate3d(-100vw, 0, 0);
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .close {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+  }
+}

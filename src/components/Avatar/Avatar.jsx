@@ -1,17 +1,16 @@
 import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import Model from './Model';
+
 import ModelAni from './Model_ani';
 
-function Avatar(props) {
+function Avatar() {
   return (
     <div>
       <Canvas
         camera={{ position: [2, 0, 12.25], fov: 15 }}
         style={{
-          background: '#111a21',
-          width: '100vw',
+          background: 'transparent',
           height: '100vh',
         }}
       >
