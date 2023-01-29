@@ -5,20 +5,14 @@ import { ReactComponent as Git } from '../../svgs/git.svg';
 import { ReactComponent as Linkedin } from '../../svgs/linkedin.svg';
 import { ReactComponent as Blog } from '../../svgs/blog.svg';
 
-function Menu({ menuVisibility, toggleMenu }) {
+function Menu({ toggleMenu }) {
   return (
-    <div
-      className={
-        menuVisibility ? `${styles.menuBoxShow}` : `${styles.menuBoxHide}`
-      }
-    >
+    <div className={styles.menuBox}>
       <span className={styles.close}>
         <Close onClick={toggleMenu} width="80" height="80" />
       </span>
 
-      <ul
-        className={menuVisibility ? `${styles.showList}` : `${styles.hideList}`}
-      >
+      <ul className={styles.showList}>
         <li>Projects</li>
         <li>About Nara</li>
 

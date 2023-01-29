@@ -25,6 +25,24 @@
   transform: rotate(-30deg);
 }
 
+.slideinDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 0vh;
+  z-index: 4;
+}
+
+.slideoutDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: -100vw;
+  height: 0vh;
+  z-index: 4;
+}
+
 @keyframes shake {
   0% {
     transform: rotate(-5deg);

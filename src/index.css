@@ -19,3 +19,9 @@ body {
 section {
   background: transparent;
 }
+
+@media screen and (min-width: 500px) {
+  body {
+    padding: 0em 2em 2em 2em;
+  }
+}

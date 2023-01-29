@@ -12,6 +12,7 @@ function Avatar() {
         style={{
           background: 'transparent',
           height: '100vh',
+          zIndex: 3,
         }}
       >
         <ambientLight intensity={1.25} />

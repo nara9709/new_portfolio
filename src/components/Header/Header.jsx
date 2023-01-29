@@ -4,6 +4,14 @@ import { ReactComponent as MenuIcon } from '../../svgs/menu.svg';
 import { ReactComponent as Logo } from '../../svgs/logo.svg';
 import { ReactComponent as Click } from '../../svgs/click.svg';
 import Menu from '../Menu/Menu';
+import { slideInLeft, slideOutLeft } from 'react-animations';
+
+import styled, { keyframes } from 'styled-components';
+
+const slideinleft = keyframes`${slideInLeft}`;
+const SlideLeft = styled.div`
+  animation: 2s ${slideinleft};
+`;
 
 function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -18,7 +26,6 @@ function Header() {
 
   return (
     <nav className={styles.nav}>
-      <Menu menuVisibility={isMenuOpen} toggleMenu={toggleMenu} />
       <span>
         <Logo width="130" height="130" />
       </span>
@@ -31,6 +38,11 @@ function Header() {
           height="100"
         ></MenuIcon>
       </span>
+      {isMenuOpen && (
+        <SlideLeft className={styles.slideinDiv}>
+          <Menu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+        </SlideLeft>
+      )}
     </nav>
   );
 }

@@ -2,6 +2,7 @@
   font-size: 1.5em;
   color: #fefefe;
   position: relative;
+  text-shadow: rgba(191, 0, 255, 0.61) 0px 0px 22px;
 }
 
 .title {
@@ -11,7 +12,8 @@
 }
 
 .name {
-  font-size: 2em;
+  font-size: 2.5em;
+  margin-top: 0.5em;
 }
 
 .nameBox {
@@ -28,10 +30,10 @@
   }
 
   .title {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   .name {
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
 }
