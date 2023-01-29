@@ -24,6 +24,36 @@
   z-index: 1;
 }
 
+.svgBox {
+  position: relative;
+}
+
+.myTreasureSvg {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: 50vh;
+
+  transform: rotate(3deg);
+}
+
+.controlSvg {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  bottom: 30vh;
+  right: -18px;
+}
+
+.ofcourseSvg {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 49vh;
+  right: 40px;
+  transform: rotate(-20deg);
+}
+
 @media screen and (min-width: 500px) {
   .nameBox {
     width: 100%;
@@ -35,5 +65,29 @@
 
   .name {
     font-size: 3.5em;
+  }
+
+  .myTreasureSvg {
+    width: 270px;
+    height: 270px;
+    bottom: 40vh;
+    left: 25%;
+  }
+
+  .controlSvg {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 25vh;
+    right: 23%;
+  }
+
+  .ofcourseSvg {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 53vh;
+    right: 33%;
+    transform: rotate(-20deg);
   }
 }

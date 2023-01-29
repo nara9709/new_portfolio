@@ -2,6 +2,9 @@ import Avatar from '../Avatar/Avatar';
 import React from 'react';
 import styles from './Home.module.css';
 import AnimatedText from 'react-animated-text-content';
+import { ReactComponent as Mytreasure } from '../../svgs/mytreasure.svg';
+import { ReactComponent as Control } from '../../svgs/control.svg';
+import { ReactComponent as Ofcourse } from '../../svgs/ofcourse.svg';
 
 function Home() {
   return (
@@ -46,6 +49,11 @@ function Home() {
         >
           Nare Lee
         </AnimatedText>
+      </div>
+      <div className={styles.svgsBox}>
+        <Mytreasure className={styles.myTreasureSvg} />
+        <Control className={styles.controlSvg} />
+        <Ofcourse className={styles.ofcourseSvg} />
       </div>
       <Avatar></Avatar>
     </section>

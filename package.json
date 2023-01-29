@@ -8,7 +8,6 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
-    "framer-motion": "^8.5.4",
     "postcss": "^8.4.21",
     "react": "^18.2.0",
     "react-animated-text-content": "^1.0.1",
