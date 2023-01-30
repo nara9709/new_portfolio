@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styles from './Header.module.css';
 import { ReactComponent as MenuIcon } from '../../svgs/menu.svg';
-import { ReactComponent as Logo } from '../../svgs/logo.svg';
+import Logo from '../../svgs/logo.svg';
 import { ReactComponent as Click } from '../../svgs/click.svg';
 import Menu from '../Menu/Menu';
-import { slideInLeft, slideOutLeft } from 'react-animations';
+import { slideInLeft } from 'react-animations';
 
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
@@ -29,7 +29,7 @@ function Header() {
     <nav className={styles.nav}>
       <span>
         <Link to={'/'}>
-          <Logo className={styles.logo} width="120" height="120" />
+          <img className={styles.logo} src={Logo} alt="logo" />
         </Link>
       </span>
       <span>

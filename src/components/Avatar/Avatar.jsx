@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import styles from './Avatar.module.css';
-
 import ModelAni from './Model_ani';
-import { ReactComponent as Logo } from '../../svgs/logo.svg';
+import Logo from '../../svgs/logo.svg';
 
 function Avatar() {
   const [isRendered, setRendered] = useState(false);
@@ -13,7 +12,7 @@ function Avatar() {
     <div className={styles.avatarContainer}>
       {!isRendered && (
         <div className={styles.loadingDiv}>
-          <Logo className={styles.logo} />
+          <img src={Logo} alt="logo" className={styles.logo} />
         </div>
       )}
       <Canvas

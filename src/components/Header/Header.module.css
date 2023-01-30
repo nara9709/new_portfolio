@@ -17,7 +17,8 @@
 
 .click {
   position: absolute;
-  right: 90px;
+  right: 100px;
+  top: 10px;
   transform: rotate(-30deg);
 }
 
@@ -37,6 +38,11 @@
   width: -100vw;
   height: 0vh;
   z-index: 4;
+}
+
+.logo {
+  width: 130px;
+  height: 130px;
 }
 
 @keyframes shake {

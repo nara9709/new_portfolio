@@ -43,7 +43,10 @@
     transform: rotate(-5deg);
   }
 
-  100% {
+  90% {
     transform: rotate(5deg);
+  }
+  0% {
+    transform: rotate(-10deg);
   }
 }
