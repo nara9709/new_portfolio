@@ -29,7 +29,7 @@ function Header() {
     <nav className={styles.nav}>
       <span>
         <Link to={'/'}>
-          <Logo width="130" height="130" />
+          <Logo className={styles.logo} width="120" height="120" />
         </Link>
       </span>
       <span>
