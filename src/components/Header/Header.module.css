@@ -17,7 +17,7 @@
 
 .click {
   position: absolute;
-  right: 100px;
+  right: 90px;
   top: 10px;
   transform: rotate(-30deg);
 }
