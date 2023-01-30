@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Home.module.css';
 import AnimatedText from 'react-animated-text-content';
 import { ReactComponent as Mytreasure } from '../../svgs/mytreasure.svg';
-import { ReactComponent as Control } from '../../svgs/control.svg';
+import { ReactComponent as Game } from '../../svgs/game.svg';
 import { ReactComponent as Ofcourse } from '../../svgs/ofcourse.svg';
 
 function Home() {
@@ -19,15 +19,15 @@ function Home() {
             ease: 'ease-in-out',
           }}
           animationType="float"
-          interval={0.08}
-          duration={0.8}
+          interval={0.05}
+          duration={2.5}
           tag="h2"
           className={styles.title}
           includeWhiteSpaces
           threshold={0.1}
           rootMargin="5%"
         >
-          Front end Developer
+          Frontend Developer
         </AnimatedText>
 
         <AnimatedText
@@ -39,8 +39,8 @@ function Home() {
             ease: 'ease-in-out',
           }}
           animationType="float"
-          interval={0.08}
-          duration={1.5}
+          interval={0.1}
+          duration={3.5}
           tag="h1"
           className={styles.name}
           includeWhiteSpaces
@@ -52,7 +52,7 @@ function Home() {
       </div>
       <div className={styles.svgsBox}>
         <Mytreasure className={styles.myTreasureSvg} />
-        <Control className={styles.controlSvg} />
+        <Game className={styles.gameSvg} />
         <Ofcourse className={styles.ofcourseSvg} />
       </div>
       <Avatar></Avatar>

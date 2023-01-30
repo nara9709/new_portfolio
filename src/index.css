@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0em 1em 1em 1em;
-  background-image: linear-gradient(
+  background: linear-gradient(
     to bottom,
     #0a1627,
     #0d1a32,
@@ -9,15 +9,21 @@ body {
     #1c2147,
     #272351
   );
-
+  background-size: cover;
   box-sizing: border-box;
   font-family: orbitron, sans-serif;
   font-style: normal;
   font-weight: 300;
+  height: 100%;
+  color: #fefefe;
 }
 
 section {
   background: transparent;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 500px) {

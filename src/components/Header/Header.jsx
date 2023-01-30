@@ -7,6 +7,7 @@ import Menu from '../Menu/Menu';
 import { slideInLeft, slideOutLeft } from 'react-animations';
 
 import styled, { keyframes } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const slideinleft = keyframes`${slideInLeft}`;
 const SlideLeft = styled.div`
@@ -27,7 +28,9 @@ function Header() {
   return (
     <nav className={styles.nav}>
       <span>
-        <Logo width="130" height="130" />
+        <Link to={'/'}>
+          <Logo width="130" height="130" />
+        </Link>
       </span>
       <span>
         <Click width="60" height="60" className={styles.click} />

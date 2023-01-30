@@ -4,6 +4,7 @@ import { ReactComponent as Close } from '../../svgs/close.svg';
 import { ReactComponent as Git } from '../../svgs/git.svg';
 import { ReactComponent as Linkedin } from '../../svgs/linkedin.svg';
 import { ReactComponent as Blog } from '../../svgs/blog.svg';
+import { Link } from 'react-router-dom';
 
 function Menu({ toggleMenu }) {
   return (
@@ -13,20 +14,45 @@ function Menu({ toggleMenu }) {
       </span>
 
       <ul className={styles.showList}>
-        <li>Projects</li>
-        <li>About Nara</li>
+        <Link to={'projects'}>
+          <li onClick={toggleMenu}>Projects</li>
+        </Link>
 
-        <li>Contact</li>
+        <Link to={'about'}>
+          <li onClick={toggleMenu}>About Nara</li>
+        </Link>
+
+        <Link to={'contact'}>
+          <li onClick={toggleMenu}>Contact</li>
+        </Link>
 
         <ul className={styles.linkList}>
           <li>
-            <Git width="50" height="50" />
+            <a
+              href="https://github.com/nara9709"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Git width="50" height="50" />
+            </a>
           </li>
           <li>
-            <Linkedin width="50" height="50" />
+            <a
+              href="https://www.linkedin.com/in/nara-lee-05ba8a15a/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Linkedin width="50" height="50" />
+            </a>
           </li>
           <li>
-            <Blog width="50" height="50" />
+            <a
+              href="https://medium.com/@worldkr19"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Blog width="50" height="50" />
+            </a>
           </li>
         </ul>
       </ul>
