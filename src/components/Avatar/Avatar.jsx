@@ -16,7 +16,7 @@ function Avatar() {
         </div>
       )}
       <Canvas
-        camera={{ position: [2, 0, 12.25], fov: 15 }}
+        camera={{ position: [2, 0, 12.25], fov: 20 }}
         style={{
           background: 'transparent',
           height: '100vh',
