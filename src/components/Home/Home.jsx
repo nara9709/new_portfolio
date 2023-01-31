@@ -2,10 +2,7 @@ import Avatar from '../Avatar/Avatar';
 import React from 'react';
 import styles from './Home.module.css';
 import AnimatedText from 'react-animated-text-content';
-import { ReactComponent as Mytreasure } from '../../svgs/mytreasure.svg';
-import { ReactComponent as Game } from '../../svgs/game.svg';
-import { ReactComponent as Ofcourse } from '../../svgs/ofcourse.svg';
-
+import { ReactComponent as Frame } from '../../svgs/frame.svg';
 function Home() {
   return (
     <section className={styles.section}>
@@ -51,9 +48,7 @@ function Home() {
         </AnimatedText>
       </div>
       <div className={styles.svgsBox}>
-        <Mytreasure className={styles.myTreasureSvg} />
-        <Game className={styles.gameSvg} />
-        <Ofcourse className={styles.ofcourseSvg} />
+        <Frame className={styles.frameSvg} />
       </div>
       <Avatar></Avatar>
     </section>

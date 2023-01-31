@@ -13,7 +13,7 @@ function Projects() {
       <div>
         <ul>
           <li
-            className={styles.skinbody}
+            className={styles.projectContainer}
             onMouseEnter={() => setSkin(true)}
             onMouseLeave={() => setSkin(false)}
           >
@@ -77,7 +77,7 @@ function Projects() {
             )}
           </li>
           <li
-            className={styles.skinbody}
+            className={styles.projectContainer}
             onMouseEnter={() => setJournal(true)}
             onMouseLeave={() => setJournal(false)}
           >
@@ -142,7 +142,7 @@ function Projects() {
             )}
           </li>
           <li
-            className={styles.skinbody}
+            className={styles.projectContainer}
             onMouseEnter={() => setGame(true)}
             onMouseLeave={() => setGame(false)}
           >
@@ -208,7 +208,7 @@ function Projects() {
             )}
           </li>
           <li
-            className={styles.skinbody}
+            className={styles.projectContainer}
             onMouseEnter={() => setSushi(true)}
             onMouseLeave={() => setSushi(false)}
           >

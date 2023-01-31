@@ -29,29 +29,11 @@
   position: relative;
 }
 
-.myTreasureSvg {
+.frameSvg {
   position: absolute;
-  width: 150px;
-  height: 150px;
-  bottom: 50vh;
-  transform: rotate(3deg);
-}
-
-.gameSvg {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  bottom: 30vh;
-  right: 3%;
-}
-
-.ofcourseSvg {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  bottom: 50vh;
-  right: 40px;
-  transform: rotate(-10deg);
+  width: 350px;
+  left: 20px;
+  bottom: 20vh;
 }
 
 @media screen and (min-width: 500px) {
@@ -67,25 +49,10 @@
     font-size: 3.5em;
   }
 
-  .myTreasureSvg {
-    width: 270px;
-    height: 270px;
-    bottom: 40vh;
-    left: 25%;
-  }
-
-  .gameSvg {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    bottom: 35vh;
-    right: 27%;
-  }
-
-  .ofcourseSvg {
-    width: 150px;
-    height: 150px;
-    bottom: 47vh;
-    right: 33%;
+  .frameSvg {
+    width: 550px;
+    height: 550px;
+    bottom: 18vh;
+    left: 35%;
   }
 }

@@ -127,6 +127,7 @@ section p {
   }
 
   .profile span {
+    text-align: left;
     width: 40%;
     font-size: 1.2em;
     margin-right: 2em;
