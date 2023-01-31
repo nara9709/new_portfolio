@@ -31,9 +31,9 @@
 
 .frameSvg {
   position: absolute;
-  width: 350px;
-  left: 20px;
-  bottom: 20vh;
+  width: 100vw;
+  height: 100vh;
+  right: -15px;
 }
 
 @media screen and (min-width: 500px) {
@@ -50,9 +50,9 @@
   }
 
   .frameSvg {
-    width: 550px;
-    height: 550px;
+    width: 55vw;
+    height: 55vh;
     bottom: 18vh;
-    left: 35%;
+    left: 22%;
   }
 }
