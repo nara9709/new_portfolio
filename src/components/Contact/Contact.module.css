@@ -49,6 +49,7 @@
 .section textarea:focus,
 input:focus {
   outline: 2px solid rgba(191, 0, 255, 0.61);
+  border-radius: 5px;
 }
 
 .button {

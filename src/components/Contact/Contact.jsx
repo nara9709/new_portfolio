@@ -13,7 +13,7 @@ function Contact() {
     // Check user fill out all input
     if (
       !formCurrent.user_name.value ||
-      !formCurrent.user_email.value.value ||
+      !formCurrent.user_email.value ||
       !formCurrent.message.value
     ) {
       alert('Please fill out all📝  ');
