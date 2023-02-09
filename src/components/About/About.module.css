@@ -1,0 +1,85 @@
+.section {
+  background-color: transparent;
+  text-align: center;
+}
+
+section .h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-shadow: rgba(191, 0, 255, 0.61) 0px 0px 22px;
+}
+
+section p {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1em;
+}
+
+.profileimg {
+  width: 300px;
+  border-radius: 10px;
+  margin-top: 1em;
+}
+
+.toolkit {
+  margin: auto;
+  margin-bottom: 3em;
+  max-width: 1000px;
+}
+
+.toolkit h2 {
+  margin-top: 2em;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  text-shadow: rgba(191, 0, 255, 0.61) 0px 0px 22px;
+}
+
+.toolkit ul {
+  padding: 0;
+  list-style: none;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3em;
+}
+
+.skill span {
+  margin-left: 0.5em;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 500px) {
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile span {
+    text-align: left;
+    width: 40%;
+    font-size: 1.2em;
+    margin-right: 2em;
+  }
+
+  .section h1 {
+    font-size: 3em;
+  }
+
+  .toolkit {
+    font-size: 1.5em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+}

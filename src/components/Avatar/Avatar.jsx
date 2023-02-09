@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
 import styles from './Avatar.module.css';
 import ModelAni from './Model_ani';
 import Logo from '../../svgs/logo.svg';
@@ -29,7 +28,6 @@ function Avatar() {
         <ambientLight intensity={1.25} />
         <ambientLight intensity={0.1} />
         <ModelAni position={[0.025, -0.9, 0]} />
-        <OrbitControls />
       </Canvas>
     </div>
   );
