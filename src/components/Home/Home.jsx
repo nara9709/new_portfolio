@@ -44,7 +44,7 @@ function Home() {
           threshold={0.1}
           rootMargin="5%"
         >
-          Nare Lee
+          Nara Lee
         </AnimatedText>
       </div>
       <div className={styles.svgsBox}>
