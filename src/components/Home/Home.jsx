@@ -24,7 +24,7 @@ function Home() {
           threshold={0.1}
           rootMargin="5%"
         >
-          Frontend Developer
+          Front-end Developer
         </AnimatedText>
 
         <AnimatedText
@@ -44,7 +44,7 @@ function Home() {
           threshold={0.1}
           rootMargin="5%"
         >
-          Nara Lee
+          Nara lee
         </AnimatedText>
       </div>
       <div className={styles.svgsBox}>

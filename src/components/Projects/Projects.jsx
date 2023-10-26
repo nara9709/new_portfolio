@@ -3,6 +3,7 @@ import styles from './Projects.module.css';
 
 function Projects() {
   const [showSkin, setSkin] = useState(false);
+  const [showStaffonly, setStaffonly] = useState(false);
   const [showJournal, setJournal] = useState(false);
   const [showGame, setGame] = useState(false);
   const [showSushi, setSushi] = useState(false);
@@ -12,6 +13,72 @@ function Projects() {
       <h1>Projects</h1>
       <div>
         <ul>
+        <li
+            className={styles.projectContainer}
+            onMouseEnter={() => setStaffonly(true)}
+            onMouseLeave={() => setStaffonly(false)}
+          >
+            <img
+            className={styles.staffonlyImage}
+              src="https://res.cloudinary.com/nara9709/image/upload/v1698319075/%E1%84%8C%E1%85%A6%E1%84%86%E1%85%A9%E1%86%A8_%E1%84%8B%E1%85%A5%E1%86%B9%E1%84%82%E1%85%B3%E1%86%AB_%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_1_xienhm.png" alt='staffonly'
+            />
+            {showStaffonly && (
+              <div className={styles.modal}>
+                <span
+                  className={styles.closeIcon}
+                  onClick={() => {
+                    setStaffonly(false);
+                  }}
+                >
+                  <ion-icon name="close-outline"></ion-icon>
+                </span>
+                <div className={styles.desBox}>
+                  <h3>
+                  STAFF ONLY <br /> 알바생들을 위한 커뮤니티 & 달력 서비스
+                  </h3>
+                  <p>
+                  유저는 포스트를 작성하고 댓글 또는 대댓글을 작성 할 수 있습니다. 또한 자신의 근무시간을 기입하면 자동으로 그 달의 월급과 근무시간을 계산해주는 알바 달력까지 이용 할 수 있습니다.
+                    <br /> <br />
+                    SWR을 이용해 데이터를 가져옴으로써 중복 데이터 없이 필요한 데이터만 가져와 서버의 부하를 낮추고 불필요한 데이터 전송을 방지 했으며, 유저가 실시간으로 업데이트 되는 데이터를 빠르게 확인 할수있도록 하였습니다.
+                  </p>
+                  <div className={styles.stackBox}>
+                    <span className={styles.stack}>
+                      <ion-icon name="logo-nodejs"></ion-icon> Next.js
+                    </span>
+                    <span className={styles.stack}>
+                      <ion-icon name="logo-nodejs"></ion-icon> TypeScript
+                    </span>
+                    <span className={styles.stack}>
+                      <ion-icon name="logo-css3"></ion-icon> Tailwind
+                    </span>
+                    <span className={styles.stack}>
+                    <ion-icon name="analytics-outline"></ion-icon> Sanity
+                    </span>
+                  </div>
+                  <div>
+                    <button className={styles.button}>
+                      <a
+                        target="_blank"
+                        href="https://staff-only-rose.vercel.app/"
+                        rel="noreferrer"
+                      >
+                        View Live
+                      </a>
+                    </button>
+                    <button className={styles.button}>
+                      <a
+                        target="_blank"
+                        href="https://github.com/nara9709/Staff_Only"
+                        rel="noreferrer"
+                      >
+                        Github
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+          </li>
           <li
             className={styles.projectContainer}
             onMouseEnter={() => setSkin(true)}

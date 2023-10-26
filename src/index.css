@@ -11,7 +11,7 @@ body {
   );
   background-size: cover;
   box-sizing: border-box;
-  font-family: orbitron, sans-serif;
+  font-family: orbitron, sans-serif,  'Nanum Gothic Coding', monospace;
   font-style: normal;
   font-weight: 300;
   height: 100%;
@@ -20,6 +20,10 @@ body {
 
 section {
   background: transparent;
+}
+
+section p {
+  font-family: 'Nanum Gothic Coding', monospace !important;
 }
 
 a {
